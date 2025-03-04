@@ -8,12 +8,12 @@ inputs:
 outputs:
   sha256:
     description: "Submodule's commit hash"
-    value: ${{ steps.Submodule-Version-Hash-Action.outputs.sha256 }}
+    value: ${{ steps.submodule-version-hash.outputs.sha256 }}
 runs:
   using: "composite"
   steps:
     - name: Submodule Hash
-      id: submodule-hash
+      id: submodule-version-hash
       shell: bash
       run: |
         ${GITHUB_ACTION_PATH}/hash.sh ${{ inputs.path }}
