@@ -21,4 +21,6 @@ runs:
     - name: Submodule Hash
       id: submodule-hash
       shell: bash
-      run: echo "sha256=$(${GITHUB_ACTION_PATH}/hash.sh ${{ inputs.path }})" >> $GITHUB_ENV
+      run: |
+        echo ${GITHUB_ACTION_PATH}/hash.sh ${{ inputs.path }}
+        echo "sha256=$(${GITHUB_ACTION_PATH}/hash.sh ${{ inputs.path }})" >> $GITHUB_ENV
