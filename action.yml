@@ -17,4 +17,4 @@ runs:
       shell: bash
       run: |
         ${GITHUB_ACTION_PATH}/hash.sh ${{ inputs.path }}
-        echo "sha256=$(${GITHUB_ACTION_PATH}/hash.sh ${{ inputs.path }})" >> $GITHUB_ENV
+        echo "sha256=$(${GITHUB_ACTION_PATH}/hash.sh ${{ inputs.path }})" >> $GITHUB_OUTPUT
