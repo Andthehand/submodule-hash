@@ -14,5 +14,5 @@ runs:
   steps:
     - name: Submodule Hash
       id: submodule-hash
-      working-directory: ${{ inputs.path }}
-      run: echo "sha256=$(( git submodule > hash.txt ) | certutil -hashfile hash.txt SHA256 | findstr /v "hash")"
+      shell: bash
+      run: echo "sha256=$(./hash.sh ${{ inputs.path }})" >> $GITHUB_ENV
