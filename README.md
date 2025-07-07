@@ -1,4 +1,4 @@
-# ⚡ submodule-version-hash-action
+# ⚡ submodule-hash
 
 This GitHub Action outputs a hash of the current submodule state — ideal for **caching build artifacts that depend on submodules** in GitHub Actions workflows.
 
