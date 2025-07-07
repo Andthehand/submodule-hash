@@ -3,7 +3,7 @@ branding:
   color: "blue"
 
 name: 'Submodule Commit Hash'
-description: 'To hash the commit of the submodule for cache purposes'
+description: 'Generates a hash based on the submodule commit(s) for use in caching workflows.'
 inputs:
   path:
     description: 'Path to the submodule'
