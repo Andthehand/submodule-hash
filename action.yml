@@ -1,3 +1,7 @@
+branding:
+  icon: "check-circle"
+  color: "blue"
+
 name: 'Submodule Commit Hash'
 description: 'To hash the commit of the submodule for cache purposes'
 inputs:
